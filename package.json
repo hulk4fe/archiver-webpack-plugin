@@ -24,6 +24,5 @@
   "homepage": "https://github.com/me-hotel/archiver-webpack-plugin#readme",
   "dependencies": {
     "archiver": "^1.3.0"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
