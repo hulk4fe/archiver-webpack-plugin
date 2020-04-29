@@ -1,7 +1,7 @@
 {
-  "name": "compressDir-webpack-plugin",
+  "name": "cmp-webpack-plugin",
   "version": "1.0.0",
-  "description": "compressDir-webpack-plugin",
+  "description": "cmp-webpack-plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/me-hotel/archiver-webpack-plugin.git"
   },
   "keywords": [
-    "compressDir-webpack-plugin",
-    "compressDir",
+    "cmp-webpack-plugin",
+    "cmp",
     "webpack",
     "plugin"
   ],

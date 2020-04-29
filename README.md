@@ -1,19 +1,19 @@
-# compressDir-webpack-plugin
+# cmp-webpack-plugin
 用于压缩目录的webpack插件
 
 ## 安装
 ````bash
-npm install --save-dev compressDir-webpack-plugin
+npm install --save-dev cmp-webpack-plugin
 ````
 
 ## 使用
 `webpack.config.js`
 ````
-const CompressDirWebpackPlugin = require("compressDir-webpack-plugin");
+const CmpWebpackPlugin = require("cmp-webpack-plugin");
 
 module.exports = {
   plugins: [
-    new CompressDirWebpackPlugin({
+    new CmpWebpackPlugin({
       format: "zip",
       output: "/dist/Project",
       src: "/dist/Project",
