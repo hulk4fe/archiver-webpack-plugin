@@ -1,7 +1,7 @@
 {
-  "name": "compress-webpack-plugin",
+  "name": "compressDir-webpack-plugin",
   "version": "1.0.0",
-  "description": "compress-webpack-plugin",
+  "description": "compressDir-webpack-plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/me-hotel/archiver-webpack-plugin.git"
   },
   "keywords": [
-    "compress-webpack-plugin",
-    "compress",
+    "compressDir-webpack-plugin",
+    "compressDir",
     "webpack",
     "plugin"
   ],
@@ -24,5 +24,6 @@
   "homepage": "https://github.com/me-hotel/archiver-webpack-plugin#readme",
   "dependencies": {
     "archiver": "^1.3.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }

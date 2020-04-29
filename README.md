@@ -1,19 +1,19 @@
-# archiver-webpack-plugin
+# compressDir-webpack-plugin
 用于压缩目录的webpack插件
 
 ## 安装
 ````bash
-npm install --save-dev archiver-webpack-plugin
+npm install --save-dev compressDir-webpack-plugin
 ````
 
 ## 使用
 `webpack.config.js`
 ````
-const ArchiverWebpackPlugin = require("archiver-webpack-plugin");
+const CompressDirWebpackPlugin = require("compressDir-webpack-plugin");
 
 module.exports = {
   plugins: [
-    new ArchiverPlugin({
+    new CompressDirWebpackPlugin({
       format: "zip",
       output: "/dist/Project",
       src: "/dist/Project",

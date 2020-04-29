@@ -1,5 +1,5 @@
 /**
- * compress-webpack-plugin是用于压缩目录的插件
+ * compressDir-webpack-plugin是用于压缩目录的插件
  * @param {Object} options 
  * @param {Boolean} options.output 输出压缩包路径，默认webpack output目录
  * @param {Array} options.format 压缩文件后缀，默认zip
@@ -12,7 +12,7 @@
 const archiver = require("archiver");
 const fs = require("fs");
 
-class CompressWebpackPlugin {
+class CompressDirWebpackPlugin {
   constructor(options = {}) {
     this.output = options.output;
     this.format = options.format || "zip";
@@ -44,4 +44,4 @@ class CompressWebpackPlugin {
   }
 }
 
-module.exports = CompressWebpackPlugin;
+module.exports = CompressDirWebpackPlugin;
