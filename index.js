@@ -28,7 +28,7 @@ class CmpDirWebpackPlugin {
     const src = this.src || `${compiler.options.output.path}`
     const test = this.test || "**"
     // afterEmit => async hook
-    compiler.plugin("afterEmit", () => {
+    const onDo = () => {
       const archive = archiver(ext);
       archive.pipe(fs.createWriteStream(output));
       archive.bulk([
@@ -40,7 +40,12 @@ class CmpDirWebpackPlugin {
         }
       ]);
       archive.finalize();
-    });
+    }
+    if(compiler.hooks){
+      compiler.hooks.afterEmit.tap('CmpDirWebpackPlugin', onDo)
+    }else{
+      compiler.plugin("afterEmit", onDo)
+    }
   }
 }
 
